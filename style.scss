@@ -1,0 +1,87 @@
+$backgroundButton: rgb(54, 54, 250);
+$borderInput: red;
+$title: #ffffff;
+$text: black;
+
+* {
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #999999;
+    background-image: url('https://i.pinimg.com/originals/af/8d/63/af8d63a477078732b79ff9d9fc60873f.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-size: 60%;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.page-logo {
+    width: 200px;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#conversor {
+    width: 100vw;
+    text-align: center;
+    margin-top: 200px;
+
+    .page-title {
+        font-size: 40px;
+        color: $title;
+        margin: 0 0 25px;
+    }
+
+    form {
+        max-width: 600px;
+
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    select,
+    input {
+        border-radius: 4px;
+        background-color: $title;
+        color: $text;
+        padding: 10px;
+    }
+
+    #convertido {
+        width: 200px;
+    }
+
+
+    .buttonConvert button {
+        color: white;
+        background: $backgroundButton;
+        width: 120px;
+        height: 50px;
+        border-radius: 9px;
+        margin-top: 25px;
+    }
+
+    button:hover {
+        background: $borderInput;
+        cursor: pointer;
+    }
+}
